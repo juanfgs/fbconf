@@ -16,36 +16,33 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-      [exec] (gnome-terminal) {gnome-terminal} 
-      [exec] (firefox) {firefox} 
-[submenu] (Terminals)
-      [exec]   (gnome-terminal) {gnome-terminal} 
-[end]
+      [exec] (·:Terminal:·) {sakura} 
 [submenu] (Net)
 [submenu] (Browsers)
       [exec]   (firefox) {firefox} 
       [exec]   (vncviewer) {vncviewer} 
 [end]
 [submenu] (Mail)
-      [exec]   (evolution) {evolution} 
+      [exec]   (thunderbird) {thunderbird} 
 [end]
-[submenu] (IRC)
-      [exec]   (skype) {skype} 
+[submenu] (IM & Chat)
+      [exec]   (skype) {skype}
+      [exec]   (weechat) {sakura -e weechat}       
 [end]
 [end]
 [submenu] (Editors)
-      [exec]   (gedit) {gedit} 
+      [exec]   (mousepad) {mousepad} 
       [exec]   (emacs) {emacs} </home/juanfgs/.fluxbox/icons/emacs.xpm>
-      [exec]   (nano) {gnome-terminal -e nano} 
-      [exec]   (vi) {gnome-terminal -e vi} 
-      [exec]   (emacs-nw) {gnome-terminal -e emacs -nw} </home/juanfgs/.fluxbox/icons/emacs.xpm>
+      [exec]   (nano) {sakura -e nano} 
+      [exec]   (vi) {sakura -e vi} 
+      [exec]   (emacs-nw) {sakura -e emacs -nw} </home/juanfgs/.fluxbox/icons/emacs.xpm>
 [end]
 [submenu] (Education)
       [exec]   (stellarium) {stellarium} 
 [end]
 [submenu] (File utils)
-      [exec] (nautilus) {nautilus --no-desktop --browser} 
-      [exec]   (mc) {gnome-terminal -e mc} 
+      [exec]   (Thunar) {Thunar}	
+      [exec]   (mc) {sakura -e mc} 
 [end]
 [submenu] (Multimedia)
 [submenu] (Graphics)
@@ -55,7 +52,7 @@
 [submenu] (Audio)
       [exec]   (easytag) {easytag} 
       [exec]   (rhythmbox) {rhythmbox} 
-      [exec]   (alsamixer) {gnome-terminal -e alsamixer} 
+      [exec]   (alsamixer) {xterm -e alsamixer} 
 [end]
 [submenu] (Video)
       [exec]   (vlc) {vlc} 
@@ -65,7 +62,6 @@
 [end]
 [end]
 [submenu] (Office)
-      [exec]   (evolution) {evolution} 
       [exec] (gcalc) {gnome-calculator} 
       [exec] (Open Office)      {soffice} 
       [exec] (Open Office)      {ooffice} 
@@ -76,7 +72,7 @@
       [exec] (OO Math)          {oomath} 
 [end]
 [submenu] (System Tools)
-      [exec]   (top) {gnome-terminal -e top} 
+      [exec]   (top) {xterm -e top} 
 [end]
 [submenu] (Fluxbox menu)
       [config] (Configure) 
@@ -85,6 +81,9 @@
 [end]
 [submenu] (User Styles) {Choose a style...}
       [stylesdir] (~/.fluxbox/styles) 
+[end]
+[submenu] (Wallpaper) {Select Wallpaper}
+      [exec] ("Select wallpaper") {zenity --file-selection --title="Select Wallpaper"|xargs feh --bg-scale}
 [end]
       [workspaces] (Workspace List) 
 [submenu] (Tools)
