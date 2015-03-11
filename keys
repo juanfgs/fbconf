@@ -71,7 +71,7 @@ Mod1 F2 :Exec fbrun
 122 :Exec amixer sset Master,0 5%-
 172 :Exec mpris-remote toggle
 148 :Exec galculator
-107 :Exec gnome-screenshot
+107 :Exec mate-screenshot
 
 
 # current window commands
