@@ -16,22 +16,33 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-      [exec] (·:Terminal:·) {sakura} 
+      [exec] (·:Terminal:·) {sakura}
+      [exec] (·:Archivos:·) {Thunar}
+      [exec]   (·:Navegador Web:·) {~/Software/firefox/firefox}      
 [submenu] (Net)
 [submenu] (Browsers)
-      [exec]   (firefox) {firefox} 
+      [exec]   (firefox) {firefox}
+      [exec]   (Firefox Developer Edition) {~/Software/firefox/firefox}
       [exec]   (vncviewer) {vncviewer} 
 [end]
 [submenu] (Mail)
       [exec]   (thunderbird) {thunderbird} 
 [end]
+[submenu] (File Sharing)
+	  [exec] (Transmission) {transmission-gtk}
+[end]
 [submenu] (IM & Chat)
       [exec]   (skype) {skype}
       [exec]   (weechat) {sakura -e weechat}       
 [end]
+[submenu] (Development)
+      [exec]   (Robomongo) {robomongo}
+      [exec]   (Git GUI) {git gui}
 [end]
+[end]
+
 [submenu] (Editors)
-      [exec]   (mousepad) {mousepad} 
+      [exec]   (Bloc de notas) {mousepad} 
       [exec]   (emacs) {emacs} </home/juanfgs/.fluxbox/icons/emacs.xpm>
       [exec]   (nano) {sakura -e nano} 
       [exec]   (vi) {sakura -e vi} 
@@ -41,8 +52,9 @@
       [exec]   (stellarium) {stellarium} 
 [end]
 [submenu] (File utils)
-      [exec]   (Thunar) {Thunar}	
-      [exec]   (mc) {sakura -e mc} 
+      [exec]   (Gestor de Archivos) {Thunar}
+      [exec]   (Grabador de CDs) {xfburn}	
+      [exec]   (Midnight Commander) {sakura -e mc} 
 [end]
 [submenu] (Multimedia)
 [submenu] (Graphics)
@@ -51,7 +63,8 @@
 [end]
 [submenu] (Audio)
       [exec]   (easytag) {easytag} 
-      [exec]   (rhythmbox) {rhythmbox} 
+      [exec]   (rhythmbox) {rhythmbox}
+      [exec]   (Clementine) {clementine}       
       [exec]   (alsamixer) {xterm -e alsamixer} 
 [end]
 [submenu] (Video)
@@ -62,7 +75,7 @@
 [end]
 [end]
 [submenu] (Office)
-      [exec] (gcalc) {gnome-calculator} 
+      [exec] (gcalc) {galculator} 
       [exec] (Open Office)      {soffice} 
       [exec] (Open Office)      {ooffice} 
       [exec] (OO Calc)          {oocalc} 

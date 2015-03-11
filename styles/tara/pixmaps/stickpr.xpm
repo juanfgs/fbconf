@@ -2,7 +2,7 @@
 static char * stickpr_xpm[] = {
 "18 18 11 1",
 " 	c None",
-".	c #343B42",
+".	c #444851",
 "+	c #FFFFFF",
 "@	c #8E8E8E",
 "#	c #CACACA",
