@@ -20,11 +20,12 @@ xmodmap "/home/juanfgs/.Xmodmap"
 kupfer &
 nm-applet &
 /usr/libexec/polkit-gnome-authentication-agent-1 &
-feh --bg-scale Imágenes/Wallpapers/Fantasy/wallhaven-9709.jpg &
+feh --bg-scale Imágenes/Wallpapers/wallhaven-167113.jpg &
 /usr/libexec/notification-daemon &
 volumeicon &
 conky -d
-
+xfce4-power-manager &
+cbatticon &
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/juanfgs/.fluxbox/log"
