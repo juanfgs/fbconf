@@ -142,7 +142,7 @@ Control Mod4 F11 :TakeToWorkspace 11
 Control Mod4 F12 :TakeToWorkspace 12
 
 
-Control KP_0 :Minimize
+
 Control KP_1 :MacroCmd {ResizeTo 958  540} {MoveTo 00 00 LowerLeft}   
 Control KP_2 :MacroCmd {ResizeTo 1920 540} {MoveTo 00 00 LowerLeft}   
 Control KP_3 :MacroCmd {ResizeTo 958  540} {MoveTo 00 00 LowerRight}   

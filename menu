@@ -16,8 +16,9 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-      [exec] (·:Terminal:·) {sakura}
-      [exec] (·:Archivos:·) {Thunar}
+      [exec] (·:Terminal:·) {urxvt}
+      [exec] (·:Screen:·) {urxvt -e screen}      
+      [exec] (·:Archivos:·) {caja}
       [exec]   (·:Navegador Web:·) {~/Software/firefox/firefox}      
 [submenu] (Net)
 [submenu] (Browsers)
@@ -26,44 +27,49 @@
       [exec]   (vncviewer) {vncviewer} 
 [end]
 [submenu] (Mail)
-      [exec]   (thunderbird) {thunderbird} 
+      [exec]   (Evolution) {evolution} 
 [end]
 [submenu] (File Sharing)
 	  [exec] (Transmission) {transmission-gtk}
 [end]
 [submenu] (IM & Chat)
       [exec]   (skype) {skype}
-      [exec]   (weechat) {sakura -e weechat}       
+      [exec]   (weechat) {urxvt -e weechat}
+      [exec]   (HexChat) {hexchat}             
 [end]
 [submenu] (Development)
       [exec]   (Robomongo) {robomongo}
       [exec]   (Git GUI) {git gui}
 [end]
 [end]
-
+[submenu] (Productivity)
+      [exec]   (Gnote) {gnote} 
+[end]
 [submenu] (Editors)
-      [exec]   (Bloc de notas) {mousepad} 
-      [exec]   (emacs) {emacs} </home/juanfgs/.fluxbox/icons/emacs.xpm>
-      [exec]   (nano) {sakura -e nano} 
-      [exec]   (vi) {sakura -e vi} 
-      [exec]   (emacs-nw) {sakura -e emacs -nw} </home/juanfgs/.fluxbox/icons/emacs.xpm>
+      [exec]   (Pluma) {pluma} 
+      [exec]   (emacs) {emacs}
+      [exec]   (nano) {urxvt -e nano} 
+      [exec]   (vi) {urxvt -e vi} 
+      [exec]   (emacs-nw) {urxvt -e emacs -nw}
 [end]
 [submenu] (Education)
       [exec]   (stellarium) {stellarium} 
 [end]
 [submenu] (File utils)
-      [exec]   (Gestor de Archivos) {Thunar}
+      [exec]   (Gestor de Archivos) {caja}
       [exec]   (Grabador de CDs) {xfburn}	
-      [exec]   (Midnight Commander) {sakura -e mc} 
+      [exec]   (Midnight Commander) {urxvt -e mc}
+      [exec]   (Engrampa) {engrampa}       
 [end]
 [submenu] (Multimedia)
 [submenu] (Graphics)
-      [exec]   (gimp) {gimp} 
+      [exec]   (gimp) {gimp}
+      [exec]   (Atril PDF Viewer) {atril}
+      [exec]   (Eye of Mate) {eom}      
       [exec]   (inkscape) {inkscape} 
 [end]
 [submenu] (Audio)
       [exec]   (easytag) {easytag} 
-      [exec]   (rhythmbox) {rhythmbox}
       [exec]   (Clementine) {clementine}       
       [exec]   (alsamixer) {xterm -e alsamixer} 
 [end]
