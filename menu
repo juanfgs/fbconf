@@ -1,7 +1,7 @@
 [begin] (FluxBox)
       [exec] (Terminal) {urxvt}
       [exec] (Screen) {urxvt -e screen -D -R}      
-      [exec] (Archivos) {caja --no-desktop}
+      [exec] (Caja) {caja --no-desktop}
       [exec]   (Firefox) {~/Software/firefox/firefox}      
       [submenu] (Applications)
       		[include] (~/.fluxbox/appsmenu)
