@@ -17,13 +17,14 @@ xmodmap "/home/juanfgs/.Xmodmap"
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
-kupfer &
+
 nm-applet &
 /usr/libexec/polkit-gnome-authentication-agent-1 &
-feh --bg-scale Imágenes/Wallpapers/wallhaven-167113.jpg &
+feh --bg-scale Imágenes/Wallpapers/wallhaven-134014.jpg &
 /usr/libexec/notification-daemon &
 volumeicon &
 conky -d
+syndaemon -i 1.0 -K -R &
 xfce4-power-manager &
 cbatticon &
 exec fluxbox
